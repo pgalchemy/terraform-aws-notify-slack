@@ -5,7 +5,9 @@ All notable changes to this project will be documented in this file.
 <a name="unreleased"></a>
 ## [Unreleased]
 
-
+<a name="v3.4.0"></a>
+## [v3.4.0] - 2020-06-24
+- Forked repo and downgraded python runtime to 3.6
 
 <a name="v3.3.0"></a>
 ## [v3.3.0] - 2020-06-19
