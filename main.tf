@@ -67,7 +67,7 @@ resource "aws_sns_topic_subscription" "sns_notify_slack" {
 
 module "lambda" {
   source  = "terraform-aws-modules/lambda/aws"
-  version = "1.6.0"
+  version = "1.14.0"
 
   create = var.create
 
@@ -76,7 +76,7 @@ module "lambda" {
 
   handler                        = "notify_slack.lambda_handler"
   source_path                    = "${path.module}/functions/notify_slack.py"
-  runtime                        = "python3.6"
+  runtime                        = "python3.8"
   timeout                        = 30
   kms_key_arn                    = var.kms_key_arn
   reserved_concurrent_executions = var.reserved_concurrent_executions
